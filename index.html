@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ==================== FAVICON ==================== -->
-
+    <link rel="shortcut icon" href="assets/img/tz-trips-favicon.png" type="image/x-icon">
     <!-- ==================== REMIX ICONS ==================== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- ==================== SWIPER CSS ==================== -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- ==================== CSS ==================== -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -26,7 +26,7 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
@@ -49,60 +49,409 @@
     </header>
 
     <main class="main">
-    <!-- ====================  HOME ==================== -->
-    <section class="home" id="home">
-        <img src="assets/img/home1.jpg" alt="" class="home-img">
+        <!-- ====================  HOME ==================== -->
+        <section class="home" id="home">
+            <img src="assets/img/home1.jpg" alt="" class="home-img">
 
-        <div class="home-container container grid">
-            <div class="home-data">
-                <span class="home-data__subtitle">Discover your place</span>
-                <h1 class="home-data__title">Explore The <br> Beautiful <br> Tanzania</b></h1>
-                <a href="" class="button">Explore</a>
-            </div>
+            <div class="home-container container grid">
+                <div class="home-data">
+                    <span class="home-data__subtitle">Discover your place</span>
+                    <h1 class="home-data__title">Explore The <br>Best <b>Beautiful</b><br><b>Beaches</b></h1>
+                    <a href="" class="button">Explore</a>
+                </div>
 
-            <div class="home-social">
-                <a href="https://www.facebook.com" target="_blank" class="home-social__link">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="home-social__link">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="home-social__link">
-                    <i class="ri-twitter-fill"></i>
-                </a>
-            </div>
-
-            <div class="home-info">
-                <div>
-                    <span class="home-info__title">5 best places to visit</span>
-                    <a href="" class="button button-flex button-link home-info__button">
-                        More <i class="ri-arrow-drop-right-line"></i>
+                <div class="home-social">
+                    <a href="https://www.facebook.com" target="_blank" class="home-social__link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="home-social__link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="home-social__link">
+                        <i class="ri-twitter-fill"></i>
                     </a>
                 </div>
 
-                <div class="home-info__overlay">
-                    <img src="assets/img/home2.jpg" alt="" class="home-info__img">
+                <div class="home-info">
+                    <div>
+                        <span class="home-info__title">5 best places to visit</span>
+                        <a href="" class="button button-flex button-link home-info__button">
+                            More <i class="ri-arrow-drop-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="home-info__overlay">
+                        <img src="assets/img/home2.jpg" alt="" class="home-info__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  ABOUT ==================== -->
+        <section class="about section" id="about">
+            <div class="about-container container grid">
+                <div class="about-data">
+                    <h2 class="section-title about-title">More Information <br> About The Best Beaches</h2>
+                    <p class="about-description">You can find the most beautiful and pleasant places at the best
+                        prices with special discounts, you choose the place we will guide you all the way to wait, get
+                        your
+                        place now.
+                    </p>
+                    <a href="#" class="button">Reserve a place</a>
+                </div>
+
+                <div class="about-img">
+                    <div class="about-img__overlay">
+                        <img src="assets/img/about1.jpg" alt="" class="about-img__one">
+                    </div>
+                    <div class="about-img__overlay">
+                        <img src="assets/img/about2.jpg" alt="" class="about-img__two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  DISCOVER ==================== -->
+        <section class="discover section" id="discover">
+            <h2 class="section-title">Discover the most <br> attractive places</h2>
+
+            <div class="discover-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- ====================  DISCOVER 1 ==================== -->
+                    <div class="discover-card swiper-slide">
+                        <img src="assets/img/discover1.jpg" alt="" class="discover-img">
+                        <div class="discover-data">
+                            <h2 class="discover-title">Bali</h2>
+                            <span class="discover-description">24 tours available</span>
+                        </div>
+                    </div>
+                    <!-- ====================  DISCOVER 2 ==================== -->
+                    <div class="discover-card swiper-slide">
+                        <img src="assets/img/discover2.jpg" alt="" class="discover-img">
+                        <div class="discover-data">
+                            <h2 class="discover-title">Hawaii</h2>
+                            <span class="discover-description">15 tours available</span>
+                        </div>
+                    </div>
+                    <!-- ====================  DISCOVER 3 ==================== -->
+                    <div class="discover-card swiper-slide">
+                        <img src="assets/img/discover3.jpg" alt="" class="discover-img">
+                        <div class="discover-data">
+                            <h2 class="discover-title">Los Angeles</h2>
+                            <span class="discover-description">18 tours available</span>
+                        </div>
+                    </div>
+                    <!-- ====================  DISCOVER 1 ==================== -->
+                    <div class="discover-card swiper-slide">
+                        <img src="assets/img/discover4.jpg" alt="" class="discover-img">
+                        <div class="discover-data">
+                            <h2 class="discover-title">Miami</h2>
+                            <span class="discover-description">32 tours available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ====================  EXPERIENCE ==================== -->
+        <section class="experience section">
+            <h2 class="section-title">With Our Experience <br> We Will Serve You</h2>
+
+            <div class="experience-container container grid">
+                <div class="experience-content grid">
+                    <div class="experience-data">
+                        <h2 class="experience-number">20</h2>
+                        <span class="experience-description">Years <br> Experience</span>
+                    </div>
+                    <div class="experience-data">
+                        <h2 class="experience-number">75</h2>
+                        <span class="experience-description">Complete <br> Tours</span>
+                    </div>
+                    <div class="experience-data">
+                        <h2 class="experience-number">650+</h2>
+                        <span class="experience-description">Tourist <br> Destinations</span>
+                    </div>
+                </div>
+
+                <div class="experience-img grid">
+                    <div class="experience-overlay">
+                        <img src="assets/img/experience1.jpg" alt="" class="experience-img__one">
+                    </div>
+                    <div class="experience-overlay">
+                        <img src="assets/img/experience2.jpg" alt="" class="experience-img__two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  VIDEO ==================== -->
+        <section class="video section">
+            <h2 class="section-title">Video Tour</h2>
+
+            <div class="video-container container">
+                <p class="video-description">Find out more with our video of the most beautiful and
+                    pleasant places for you and your family.
+                </p>
+
+                <div class="video-content">
+                    <video id="video-file">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button-flex video-button" id="video-button">
+                        <i class="ri-play-line video-button__icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  PLACES ==================== -->
+        <section class="place section" id="place">
+            <h2 class="section-title">Choose Your Place</h2>
+
+            <div class="place-container container grid">
+                <!-- ====================  PLACES CARD 1 ==================== -->
+                <div class="place-card">
+                    <img src="assets/img/place1.jpg" alt="" class="place-img">
+
+                    <div class="place-content">
+                        <span class="place-rating">
+                            <i class="ri-star-line place-rating__icon"></i>
+                            <span class="place-rating__number">4,8</span>
+                        </span>
+
+                        <div class="place-data">
+                            <h3 class="place-title">Bali</h3>
+                            <span class="place-subtitle">Indonesia</span>
+                            <span class="place-price">$2,499</span>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex place-button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+                <!-- ====================  PLACES CARD 2 ==================== -->
+                <div class="place-card">
+                    <img src="assets/img/place2.jpg" alt="" class="place-img">
+
+                    <div class="place-content">
+                        <span class="place-rating">
+                            <i class="ri-star-line place-rating__icon"></i>
+                            <span class="place-rating__number">5,0</span>
+                        </span>
+
+                        <div class="place-data">
+                            <h3 class="place-title">Bora Bora</h3>
+                            <span class="place-subtitle">Polinesia</span>
+                            <span class="place-price">$1,599</span>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex place-button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+                <!-- ====================  PLACES CARD 3 ==================== -->
+                <div class="place-card">
+                    <img src="assets/img/place3.jpg" alt="" class="place-img">
+
+                    <div class="place-content">
+                        <span class="place-rating">
+                            <i class="ri-star-line place-rating__icon"></i>
+                            <span class="place-rating__number">4,9</span>
+                        </span>
+
+                        <div class="place-data">
+                            <h3 class="place-title">Hawaii</h3>
+                            <span class="place-subtitle">South America</span>
+                            <span class="place-price">$3,499</span>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex place-button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+                <!-- ====================  PLACES CARD 4 ==================== -->
+                <div class="place-card">
+                    <img src="assets/img/place4.jpg" alt="" class="place-img">
+
+                    <div class="place-content">
+                        <span class="place-rating">
+                            <i class="ri-star-line place-rating__icon"></i>
+                            <span class="place-rating__number">4,8</span>
+                        </span>
+
+                        <div class="place-data">
+                            <h3 class="place-title">London</h3>
+                            <span class="place-subtitle">United Kingdom</span>
+                            <span class="place-price">$1,999</span>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex place-button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+                <!-- ====================  PLACES CARD 5 ==================== -->
+                <div class="place-card">
+                    <img src="assets/img/place5.jpg" alt="" class="place-img">
+
+                    <div class="place-content">
+                        <span class="place-rating">
+                            <i class="ri-star-line place-rating__icon"></i>
+                            <span class="place-rating__number">4,7</span>
+                        </span>
+
+                        <div class="place-data">
+                            <h3 class="place-title">Florida</h3>
+                            <span class="place-subtitle">United States</span>
+                            <span class="place-price">$2,799</span>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex place-button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  SUBSCRIBE ==================== -->
+        <section class="subscribe section">
+            <div class="subscribe-bg">
+                <div class="subscribe-container container">
+                    <h2 class="section-title subscribe-title">Subscribe to our <br> newsletter</h2>
+                    <p class="subscribe-description">Subscribe to our newsletter and get exclusive offers straight to
+                        your inbox.</p>
+
+                    <form action="" class="subscribe-form">
+                        <input type="text" placeholder="Enter email" class="subscribe-input">
+
+                        <button class="button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  SPONSORS ==================== -->
+        <section class="sponsor section">
+            <div class="sponsor-container container grid">
+                <div class="sponsor-content">
+                    <img src="assets/img/sponsors1.png" alt="" class="sponsor-img">
+                </div>
+                <div class="sponsor-content">
+                    <img src="assets/img/sponsors2.png" alt="" class="sponsor-img">
+                </div>
+                <div class="sponsor-content">
+                    <img src="assets/img/sponsors3.png" alt="" class="sponsor-img">
+                </div>
+                <div class="sponsor-content">
+                    <img src="assets/img/sponsors4.png" alt="" class="sponsor-img">
+                </div>
+                <div class="sponsor-content">
+                    <img src="assets/img/sponsors5.png" alt="" class="sponsor-img">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ====================  FOOTER ==================== -->
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content grid">
+                <div class="footer-data">
+                    <h3 class="footer-title">Travel</h3>
+                    <p class="footer-description">You choose the <br> destination,
+                        we offer the <br> experience.
+                    </p>
+                    
+                    <div>
+                        <a href="" target="_blank" class="footer-social">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer-social">
+                            <i class="ri-instagram-fill"></i>                       
+                        </a>
+                        <a href="" target="_blank" class="footer-social">
+                            <i class="ri-twitter-fill"></i>                           
+                        </a>
+                        <a href="" target="_blank" class="footer-social">
+                            <i class="ri-youtube-fill"></i>                           
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">About</h3>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Features</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">News & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">Company</h3>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Team</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Pricing Plan</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Become a member</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">Support</h3>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">FAQs</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Support Center</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-rights">
+                <p class="footer-copyright">&#169; 2022 TZTrips. All Rights Reserved.</p>
+                <div class="footer-terms">
+                    <a href="" class="footer-terms__link">Terms & Conditions</a>
+                    <a href="" class="footer-terms__link">Privacy Policy</a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- ====================  ABOUT ==================== -->
 
-    <!-- ====================  DISCOVER ==================== -->
-
-    <!-- ====================  FOOTER ==================== -->
-
-    <!-- ====================  EXPERIENCE ==================== -->
-
-    </main>
-    
     <!-- ====================  SCROLL UP ==================== -->
+    <a href="" class="scroll-up" id="scroll-up">
+        <i class="ri-arrow-up-line scroll-up__icon"></i>
+    </a>
 
     <!-- ====================  SCROLL REVEAL ==================== -->
     <script src=""></script>
     <!-- ==================== SWIPER JS ==================== -->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- ==================== MAIN JS ==================== -->
     <script src="assets/js/scripts.js"></script>
 </body>
