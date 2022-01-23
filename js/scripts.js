@@ -51,19 +51,6 @@ var swiper = new Swiper(".discover-container", {
     },
 });
 
-//Without rotate & with space between cards
-// var swiper = new Swiper(".discover-container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     loop: true,
-//     spaceBetween: 32,
-//     coverflowEffect: {
-//       rotate: 0,
-//     },
-// });
-
 /*========== VIDEO ==========*/
 const videoFile = document.getElementById('video-file'),
     videoButton = document.getElementById('video-button'),
@@ -125,9 +112,28 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-
-
-
 /*========== SCROLL REVEAL ANIMATION ==========*/
+const sr = ScrollReveal ({
+    distance: '60px',
+    duration: 2800,
+    //reset: true,
+})
 
-/*========== DARK LIGHT THEME ==========*/
+sr.reveal(`.home-data, .home-social__link, .home-info,
+           .discover-container,
+           .experience-data, .experience-overlay,
+           .place-card,
+           .sponsor-content,
+           .footer-data, .footer-rights`,{
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal('.about-data, .video-description, .subscribe-description', {
+    origin: 'left',
+})
+
+sr.reveal('.about-img__overlay, .video-content, .subscribe-form', {
+    origin: 'right',
+    interval: 100,
+})
