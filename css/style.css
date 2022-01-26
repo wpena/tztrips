@@ -1,6 +1,6 @@
 
 /*==================== GOOGLE FONTS ====================*/
-@import url(@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap'));
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap');
 
 /*==================== VARIABLE CSS ====================*/
 :root {
@@ -13,10 +13,10 @@
     --hue-color: 190;
 
     /* HSL color mode*/
-    --first-color: hsl(var(--hue-color), 64%, 22%);
+    --first-color: hsl(var(--hue-color), 50%, 40%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
     --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-    --title-color: hsl(var(--hue-color), 64%, 18%);
+    --title-color: hsl(var(--hue-color), 64%, 30%);
     --text-color: hsl(var(--hue-color), 64%, 35%);
     --text-color-light: hsl(var(--hue-color), 8%, 60%);
     --input-color: hsl(var(--hue-color), 24%, 97%);
@@ -26,8 +26,9 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
     /*========== Font and Typography ==========*/
-    --body-font: 'Open Sans', sans-serif;
+    --body-font: 'Raleway', sans-serif;
     --title-font: 'Raleway', sans-serif;
+    --p-font: 'Poppins', 'sans-serif';
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -37,8 +38,14 @@
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
 
     /*========== Margin Bottom ==========*/
     --mb-0-25: .25rem;
@@ -58,6 +65,10 @@
     --img-transition: .3s;
     --img-hidden: hidden;
     --img-scale: scale(1.1);
+}
+
+footer.footer.section {
+    background-color: var(--first-color-second);
 }
 
 @media screen and (min-width: 968px) {
@@ -89,7 +100,7 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
@@ -163,7 +174,9 @@ input {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: transparent;
+    background-color: var(--white-color);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
+    /* Change background header */
 }
 
 /*========== NAV ==========*/
@@ -174,20 +187,18 @@ input {
     align-items: center;
 }
 
-.nav-logo, .nav-toggle {
-    color: var(--white-color);
-}
-
 .nav-logo {
-    width: 5rem;
+    width: 7rem;
 }
 
 .nav-toggle {
+    color: var(--title-color);
     font-size: 1.2rem;
     cursor: pointer;
 }
 
 .nav-menu {
+    margin-bottom: .5rem;
     position: relative;
 }
 
@@ -212,9 +223,9 @@ input {
 }
 
 .nav-link {
+    font-size: .9rem;
     color: var(--text-color-light);
-    font-weight: var(--font-semi-bold);
-    text-transform: uppercase;
+    font-weight: var(--font-medium);
 }
 
 .nav-link:hover {
@@ -236,15 +247,6 @@ input {
     right: 0;
 }
 
-/* Change background header */
-.scroll-header {
-    background-color: var(--body-color);
-    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
-}
-
-.scroll-header .nav-toggle {
-    color: var(--title-color);
-}
 /* Active link */
 .active-link {
     position: relative;
@@ -288,7 +290,8 @@ input {
 }
 
 .home-data__subtitle {
-    display: block;
+    /* display: block; */
+    font-size: .9rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-75);
 }
@@ -655,6 +658,7 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     justify-items: center;
     row-gap: 3.5rem;
+    margin: -1rem 0 5rem 0;
 }
 
 .sponsor-img {
@@ -679,6 +683,8 @@ input {
 
 .footer-title,
 .footer-subtitle {
+    color: var(--white-color);
+    opacity: 50%;
     font-size: var(--h3-font-size);
 }
 
@@ -687,12 +693,15 @@ input {
 }
 
 .footer-description {
+    color: var(--white-color);
+    opacity: 35%;
     margin-bottom: var(--mb-2);
 }
 
 .footer-social {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--white-color);
+    opacity: 25%;
     margin-right: var(--mb-1-25);
 }
 
@@ -705,7 +714,8 @@ input {
 }
 
 .footer-link {
-    color: var(--text-color);
+    color: var(--white-color);
+    opacity: 35%;
 }
 
 .footer-rights {
@@ -717,8 +727,9 @@ input {
 
 .footer-copyright,
 .footer-terms__link {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    font-size: 0.8rem;
+    color: var(--white-color);
+    opacity: 25%;
 }
 
 .footer-terms {
@@ -727,8 +738,13 @@ input {
     justify-content: center;
 }
 
-.footer-terms__link:hover {
-    color: var(--text-color)
+.footer-terms__link:hover,
+.footer-social:hover {
+    opacity: 40%;
+}
+
+.footer-link:hover {
+    opacity: 50%;
 }
 
 /*========== SCROLL UP ==========*/
@@ -829,6 +845,10 @@ input {
         width: 470px;
         margin: 0 auto;
     }
+
+    .nav-logo {
+        width: 7rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -837,14 +857,18 @@ input {
     }
 
     .nav {
-        height: calc(var(--header-height) + 1.5rem);
+        height: calc(var(--header-height) + 1rem);
+    }
+    .nav-logo {
+        margin-top: 0.5rem;
+        width: 9rem;
     }
     .nav-link {
-        color: var(--white-color);
+        color: var(--first-color);
         text-transform: initial;
     }
     .nav-link:hover {
-        color: var(--white-color);
+        color: var(--first-color-second);
     }
     .nav-menu {
         display: flex;
@@ -860,17 +884,7 @@ input {
     }
 
     .active-link::before {
-        background-color: var(--white-color);
-    }
-
-    .scroll-header .nav-link {
-        color: var(--text-color);
-    }
-    .scroll-header .active-link {
-        color: var(--title-color);
-    }
-    .scroll-header .active-link::before {
-        background-color: var(--title-color);
+        background-color: var(--first-color);
     }
 
     .section {

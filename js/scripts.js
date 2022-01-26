@@ -29,16 +29,6 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*========== CHANGE BACKGROUND ==========*/
-function scrollHeader() {
-    const nav = document.getElementById('header')
-    // when scroll is greater than 100vh, add the scroll-header class to header tag
-    if(this.scrollY >= 100) nav.classList.add('scroll-header');
-    else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
-
-
 /*========== SWIPER DISCOVER ==========*/
 var swiper = new Swiper(".discover-container", {
     effect: "coverflow",
